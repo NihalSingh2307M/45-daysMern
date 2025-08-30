@@ -45,6 +45,3 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
-
-// Update slide content on page load
-document.addEventListener('DOMContentLoaded', updateSlideContent);
