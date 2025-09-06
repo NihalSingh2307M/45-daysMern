@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 const app = express();
 app.use(express.json()); 
 
-const uri = 'mongodb://localhost:27017'; // your MongoDB URI
+const uri = 'mongodb://localhost:27017'; 
 const client = new MongoClient(uri);
 const dbName = 'mydatabase';
 
@@ -18,8 +18,8 @@ async function main() {
  
   app.post('/api/projects', async (req, res) => {
     try {
-      const data = req.body; // data sent by client
-      const result = await projects.insertOne(data); // insert into collection
+      const data = req.body; 
+      const result = await projects.insertOne(data); 
       res.status(201).json({ insertedId: result.insertedId });
     } catch (err) {
       res.status(500).json({ error: 'Failed to create project' });
