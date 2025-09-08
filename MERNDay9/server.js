@@ -28,7 +28,7 @@ async function main() {
 
   app.get('/api/projects', async (req, res) => {
     try {
-      const allProjects = await projects.find().toArray(); 
+      const allProjects = await projects.find().toArray();
       res.json(allProjects);
     } catch (err) {
       res.status(500).json({ error: 'Failed to fetch projects' });
