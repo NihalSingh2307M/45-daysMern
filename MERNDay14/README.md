@@ -1,0 +1,1 @@
+# Day 14 Blog Platform\nA beginner-friendly CMS with authentication built using Node.js, Express, and MongoDB.
