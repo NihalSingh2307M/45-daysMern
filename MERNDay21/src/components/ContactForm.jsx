@@ -63,7 +63,7 @@ const ContactForm = () => {
                         <button
                             onClick={handleSubmit}
                             type="button"
-                            className="w-full bg-white text-indigo-600 py-4 px-6 rounded-lg font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 transform hover:scale-[1.02] transition-all duration-300 shadow-lg"
+                            className="w-full bg-white text-white-600 py-4 px-6 rounded-lg font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 transform hover:scale-[1.02] transition-all duration-300 shadow-lg"
                         >
                             Send Message
                         </button>
