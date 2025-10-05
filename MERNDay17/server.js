@@ -9,7 +9,7 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-// User routes
+// User route
 app.use('/api/users', userRoutes);
 
 module.exports = app;
